@@ -77,7 +77,7 @@ let categories = [
   },
 ];
 
-// First way with time complexity of O(n)
+// First way with time complexity of O(n^2)
 
 function mergeArrays(products, pricing) {
   const mergedArray = products.map((product, index) => {
