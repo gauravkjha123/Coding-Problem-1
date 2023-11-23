@@ -97,7 +97,7 @@ console.log(mergeArrays(products, pricing));
 
 // Second way with time complexity of O(n)
 
-function mergeArrays(products, pricing) {
+function mergeArrays2(products, pricing) {
   const pricingMap = new Map(
     pricing.map((priceObj) => [priceObj.sku, priceObj.price])
   );
@@ -112,4 +112,4 @@ function mergeArrays(products, pricing) {
   return mergedArray;
 }
 
-console.log(mergeArrays(products, pricing));
+console.log(mergeArrays2(products, pricing));
